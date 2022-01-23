@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Worldwide Holidays</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/select.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+    <script src="js/holiday.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Worldwide Holidays</h1>
+    <section>
+      <label for="countries">Country:</label>
+      <select id="countries"></select>
+    </section>
+    <section class="calendar_container">
+      <header>
+        <button id="previous-month" class="btn_round">&#60;</button>
+        <h2 id="calendar-title">Month 2021</h2>
+        <button id="next-month" class="btn_round">&#62;</button>
+      </header>
+      <table>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+        <tbody id="calendar"></tbody>
+      </table>
+    </section>
+    <section id="modal-view" class="hidden">
+      <div>
+        <button class="btn_round">&times;</button>
+        <div class="content-container"></div>
+      </div>
+    </section>
+  </body>
+</html>
