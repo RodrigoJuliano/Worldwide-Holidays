@@ -4,6 +4,8 @@ class Select {
     this._onChange = this._onChange.bind(this);
 
     this._render(container, options, defaultOption);
+
+    container.addEventListener('change', this._onChange);
   }
 
   _render(container, options, defaultOption) {
@@ -15,7 +17,6 @@ class Select {
       if (option.countryCode === defaultOption) optionEl.selected = true;
       container.appendChild(optionEl);
     }
-    container.addEventListener('change', this._onChange);
   }
 
   _onChange(event) {
